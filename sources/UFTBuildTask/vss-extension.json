@@ -1,0 +1,124 @@
+{
+  "manifestVersion": 1,
+  "id": "uft-build-tasks",
+  "name": "HPE Application Automation Tools Extension",
+  "version": "1.0.1",
+  "publisher": "fabrikam",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Tools for test with UFT. Includes 4 build tasks.",
+  "categories": [
+    "Test"
+  ],
+  "resources": [
+    "some stuff"
+  ],
+  "tags": [
+    "UFT",
+    "HPE ALM"
+  ],
+  "icons": {
+    "default": "resources/img/tfs.png"
+  },
+  "screenshots ": [
+    {
+      "path": "resources/screenshots/AlmExecution.PNG"
+    },
+    {
+      "path": "resources/screenshots/screen2.png"
+    }
+  ],
+  "links": {
+    "home": {
+      "uri": "https://github.com/hpsa/ADM-TFS-Extension"
+    },
+    "install": {
+      "uri": "https://github.com/"
+    },
+    "support": {
+      "uri": "https://github.com/hpsa/ADM-TFS-Extension/issues"
+    },
+    "repository": {
+      "uri": "https://github.com/hpsa/ADM-TFS-Extension"
+    },
+    "issues": {
+      "uri": "https://github.com/hpsa/ADM-TFS-Extension/issues"
+    }
+  },
+  "content": {
+    "details": {
+      "path": "README.md"
+    },
+    "license": {
+      "path": "License"
+    }
+  },
+  "branding": {
+    "color": "rgb(89, 141, 88)",
+    "theme": "dark"
+  },
+  "files": [
+    {
+      "path": "AlmLabEnvPrepareTask"
+    },
+    {
+      "path": "AlmLabManagementTask"
+    },
+    {
+      "path": "RunFromALM"
+    },
+    {
+      "path": "RunFromFileSystemTask"
+    }
+  ],
+  "scopes": [
+    "vso.test",
+    "vso.build_execute",
+    "vso.serviceendpoint"
+  ],
+  "contributions": [
+    {
+      "id": "alm-prep-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "AlmLabEnvPrepareTask"
+      }
+    },
+    {
+      "id": "alm-lab-management-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "AlmLabManagementTask"
+      }
+    },
+    {
+      "id": "alm-run-tests-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "RunFromALM"
+      }
+    },
+    {
+      "id": "fs-run-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "RunFromFileSystemTask"
+      }
+    }
+  ]
+}
